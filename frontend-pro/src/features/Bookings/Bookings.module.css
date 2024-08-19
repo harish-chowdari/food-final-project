@@ -1,0 +1,148 @@
+/* Container for the bookings */
+.bookingsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading for the bookings */
+.bookingsHeader {
+  text-align: center;
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #f0f4f8;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Empty bookings message */
+.empty-lists-provider {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+/* Card for all booking items */
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual booking item */
+.bookingsItem {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.bookingsItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Details section in the booking item */
+.details {
+  padding: 10px;
+}
+
+.details p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.details span {
+  font-weight: 900;
+  color: #2c3e50;
+}
+
+/* Feedback button */
+.feedbackButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #008080;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feedbackButton:hover {
+  background-color: #006666;
+}
+
+.feedbackButton:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+
+.feedback {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedbackTextarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #2c3e50;
+  resize: vertical;
+}
+
+.feedback button {
+  background-color: #008080;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback button:hover {
+  background-color: #006666;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+  
+  .bookingsContainer {
+    padding: 15px;
+  }
+}
+
+
+
+

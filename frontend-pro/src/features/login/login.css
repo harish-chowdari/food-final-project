@@ -1,0 +1,74 @@
+.loginFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    height: 100vh;
+    justify-content: center;
+}
+
+.loginForm {
+    width: 100%;
+    max-width: 500px; /* Increased from 400px to 500px for a wider form */
+}
+.appLogo {
+    width: 150px; /* Adjust based on your logo's size */
+    margin-bottom: 20px;
+}
+.formTitle {
+    color: #008080; /* Or whatever primary color you chose */
+    margin-bottom: 30px;
+}
+.inputGroup {
+    margin-bottom: 20px;
+}
+.inputGroup input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.submitBtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #36454F; /* Or your primary button color */
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.submitBtn:hover {
+    background-color: #2A2F36; /* Darker shade for hover */
+}
+.notMember {
+    margin-top: 0px;
+  }
+  
+  .registerLink {
+    color: #008080; /* Primary color */
+    text-decoration: none;
+  }
+  
+  .registerLink:hover {
+    text-decoration: underline;
+  }
+  .userTypeSelection {
+    margin-bottom: 20px;
+  }
+  
+  .userTypeSelection label {
+    margin-right: 15px;
+    font-size: 16px;
+    color: #36454F; /* Charcoal color for text */
+  }
+  
+  .userTypeSelection input[type="radio"] {
+    margin-right: 5px;
+  }

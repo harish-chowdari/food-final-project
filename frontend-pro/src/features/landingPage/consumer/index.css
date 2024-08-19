@@ -1,0 +1,12 @@
+ .providerHomePage{
+    h1{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+ }
+
+ .activeListingsSummary{
+    h2{
+        text-align: center;
+    }
+ }

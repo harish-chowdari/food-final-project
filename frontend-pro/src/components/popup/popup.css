@@ -1,0 +1,87 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  position: relative;
+  background-color: #fff;
+  background-image: linear-gradient(to top right, #ffffff, #f0f3f5);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  transform: scale(0.7);
+  transition: transform 0.3s ease-in-out;
+  animation: slideInFromBottomLeft 0.5s ease-in-out forwards;
+}
+
+.popup-overlay.active .popup-content {
+  transform: scale(1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  color: #606060;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.close-btn:hover {
+  color: #ff4569;
+}
+
+.popup-content p {
+  color: #202020;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.popup-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+@keyframes slideInFromBottomLeft {
+  from {
+    transform: scale(0) 
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+@keyframes slideOutToBottomLeft {
+  from {
+    transform: scale(1) 
+  }
+  to {
+    transform: scale(0) 
+  }
+}

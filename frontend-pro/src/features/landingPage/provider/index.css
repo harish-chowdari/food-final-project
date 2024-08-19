@@ -1,0 +1,24 @@
+.providerHomePage {
+    padding: 20px;
+  }
+  
+  .dashboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .dashboardLink {
+    padding: 10px;
+    background-color: #008080; /* Primary color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .activeListingsSummary {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for the summary section */
+    border-radius: 5px;
+  }
+  

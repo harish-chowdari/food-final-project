@@ -1,0 +1,107 @@
+/* Container for feedback section */
+.feedbackContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Heading for the feedback section */
+  .feedbackContainer h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    background-color: #f9fafb;
+  }
+  
+  /* Wrapper for all feedback items */
+  .feedbacks {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual feedback item */
+  .feedbackItem {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .feedbackItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title for feedback items */
+  .providerName {
+    font-size: 1.4rem;
+    color: #34495e;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #3498db;
+  }
+  
+  /* Feedback details container */
+  .feedbackDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Individual feedback details */
+  .item {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .itemName,
+  .feedbackText,
+  .date {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  .itemName span,
+  .feedbackText span,
+  .date span {
+    font-weight: bold;
+  }
+  
+  /* Feedback text styling */
+  .feedbackText span{
+    color: #3498db;
+  }
+  
+  /* No feedbacks message styling */
+  .noFeedbackMessage {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .feedbacks {
+      grid-template-columns: 1fr;
+    }
+  
+    .feedbackContainer {
+      padding: 15px;
+    }
+  }
+  

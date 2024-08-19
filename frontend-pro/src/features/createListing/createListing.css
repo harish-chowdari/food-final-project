@@ -1,0 +1,63 @@
+.createListingForm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .create-listing-heading{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .createListingForm h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .formField {
+    margin-bottom: 15px;
+  }
+  
+  .formField label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  
+  
+  .formField input[type="text"],
+  .formField input[type="number"],
+  .formField input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding does not affect overall width */
+  }
+  
+  .formField input[type="text"]:focus,
+  .formField input[type="number"]:focus,
+  .formField input[type="date"]:focus {
+    border-color: #008080;
+    outline: none; /* Custom focus styles */
+  }
+  
+  .submitBtn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #008080; /* Adjust to match your theme */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submitBtn:hover {
+    background-color: #006666; /* Darker shade for hover effect */
+  }
+  

@@ -1,0 +1,189 @@
+/* Container for the listings */
+.listingsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading for the listings */
+.listingsContainer h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #f0f4f8;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Empty listings message */
+.empty-lists-provider {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+/* Division for all listing cards */
+.listingsDivision {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+/* Individual listing card */
+.listingCard {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.listingCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Headline of each listing */
+.listingCard h3 {
+  background-color: #2C3E50;
+  color: white;
+  padding: 15px;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+/* Details section in the listing card */
+.details {
+  padding: 20px;
+}
+
+.listingText {
+  margin-top: 10px;
+}
+
+.listingText p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 8px;
+  
+}
+
+.listingText span {
+  font-weight: 900;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+/* Status section */
+.status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.status p {
+  margin: 0;
+}
+
+.status span {
+  font-weight: 900;
+  display: flex;
+}
+
+
+.button {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button button {
+  background-color: #008080;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0px;
+  width: 100%;
+}
+
+.button button:hover {
+  background-color: #006666;
+}
+
+.button p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0px;
+}
+
+.bookedStatus {
+  color: rgb(22, 143, 18);
+}
+
+/* Status indicators */
+.booked {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.pending {
+  color: #f02009;
+  font-weight: 600;
+}
+
+/* Claim button */
+.claimed {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #008080;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.claimed:hover {
+  background-color: #006666;
+}
+
+.claimed:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .listingsDivision {
+    grid-template-columns: 1fr;
+  }
+
+  .listingsContainer {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,95 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-color: #FFF8E7; /* Soft cream background */
+  }
+  
+  .registrationFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white; /* Keeping the form background white for clarity */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    min-height: 100vh;
+  }
+  
+  .formTitle {
+    color: #008080; /* Teal for headings */
+    margin-bottom: 30px;
+  }
+  
+  .userTypeToggle {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .userTypeToggle button {
+    padding: 10px 20px;
+    border: 2px solid #008080; /* Teal border */
+    background-color: transparent;
+    color: #008080;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+  
+  .userTypeToggle button.active {
+    background-color: #008080; /* Teal for active state */
+    color: white;
+  }
+  
+  .registrationForm {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .inputGroup {
+    margin-bottom: 20px;
+  }
+  
+  .inputGroup input, .inputGroup select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .submitBtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #36454F; /* Charcoal for the submit button */
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #2A2F36; /* Slightly darker charcoal on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .registrationFormContainer {
+      padding: 20px;
+      margin-top: 0px;
+    }
+  
+    .userTypeToggle button {
+      padding: 8px 16px; /* Adjust for smaller screens */
+    }
+  }
+  

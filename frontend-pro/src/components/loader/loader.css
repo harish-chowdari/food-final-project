@@ -1,0 +1,32 @@
+.loading-small-size{
+    position: fixed;
+    height: 100vh;
+    height: 100svh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    backdrop-filter: blur(5px);
+}
+.loading-page_loading-container{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: conic-gradient(#0000 10%,#1b459a);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+    animation: spinner-zp9dbg 1.2s infinite linear;
+}
+.loading-page_loading-text p{
+    padding-top: 1rem;
+    font-size: 4rem;
+}
+@keyframes spinner-zp9dbg {
+    to{
+        transform: rotate(1turn);
+    }
+}

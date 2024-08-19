@@ -1,0 +1,62 @@
+/* General sidebar styling */
+.sidebar {
+  width: 250px; /* Adjust width as needed */
+  height: 100vh; /* Full height */
+  background-color: #2C3E50; /* Dark shade for contrast */
+  color: #ecf0f1; /* Light text color for readability */
+  padding: 20px;
+  position: fixed; /* Ensure sidebar stays in place on scroll */
+  overflow-y: auto;
+  z-index: 99; /* Allows scrolling if content exceeds screen height */
+}
+
+/* Styling for menu header */
+.sidebar h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Resetting and styling for the navigation list */
+.menuItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for individual navigation links */
+.menuItems li a {
+  color: #ecf0f1; /* Match text color to sidebar */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the entire list item clickable */
+  padding: 10px;
+  border-radius: 4px; /* Rounded corners for aesthetic */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover and active state styling */
+.menuItems li a:hover,
+.menuItems li a.activeLink {
+  background-color: #34495E; /* Slightly lighter shade for hover/active state */
+  text-decoration: none; /* Ensure no underline appears */
+}
+
+/* Ensures content next to the sidebar is pushed to the right */
+.content {
+  margin-left: 250px; /* Match the sidebar width */
+  padding: 20px; /* Spacing around content */
+}
+
+
+.svg-logout{
+  width: 30px;
+  color: white;
+}
+
+.logout-div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 8%;
+}
